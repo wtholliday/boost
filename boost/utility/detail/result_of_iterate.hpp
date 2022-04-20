@@ -10,6 +10,8 @@
 //  License, Version 1.0. (See accompanying file LICENSE_1_0.txt or
 //  copy at http://www.boost.org/LICENSE_1_0.txt)
 
+namespace boost {
+
 // For more information, see http://www.boost.org/libs/utility
 #if !defined(BOOST_PP_IS_ITERATING)
 # error Boost result_of - do not include this file!
@@ -216,3 +218,5 @@ struct tr1_result_of_impl<R (T0::*)
 
 }
 #endif
+
+}

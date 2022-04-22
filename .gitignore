@@ -68,3 +68,4 @@ VSProjects
 
 # SPM
 .swiftpm
+.build

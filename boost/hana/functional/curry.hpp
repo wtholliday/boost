@@ -115,8 +115,9 @@ BOOST_HANA_NAMESPACE_BEGIN
         template <std::size_t n>
         constexpr make_curry_t<n> curry_or_call{};
 
+        // Fix from https://github.com/boostorg/hana/issues/446
         template <>
-        constexpr auto curry_or_call<0> = apply;
+        constexpr static auto curry_or_call<0> = apply;
     }
 
     template <std::size_t n, typename F>
